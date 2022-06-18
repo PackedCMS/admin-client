@@ -2,9 +2,11 @@
 import { Link } from "react-router-dom";
 
 
-export default function SidebarItem(child, {to}) {
+export default function SidebarItem({ children, to }) {
 
-   return(
-      <Link to={to}>{child}</Link>
+   return (
+      <div className="sidebar-item">
+         <Link to={to} itemType="button" className="link-sidebar">{children}</Link>
+      </div>
    )
 }
