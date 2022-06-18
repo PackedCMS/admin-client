@@ -14,7 +14,7 @@ body {
 }
 
 .sidebar {
-   background-color: rgb(108, 194, 206);
+   background-color: #023e8a;
    height: 100vh;
 }
 
@@ -25,29 +25,93 @@ body {
    padding: 20px;
 }
 
+
+.sidebar-items {
+   display: grid;
+   grid-template-columns: auto;
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+
 .sidebar-line {
    background-color: white;
    width: 90%;
    height: 5px;
    margin: auto;
+   margin: 20px;
+   margin-top: 0px;
    border-radius: 5px;
 }
 
-.sidebar-item{
-   font-size: 24px;
+a {
    text-decoration: none;
-   margin: 10px;
-   margin-left: 15px;
-   width: 100%;
 }
 
-.sidebar-item:hover{
+.sidebar-item {
+   font-size: 24px;
+   text-decoration: none;
+   margin-top: 10px;
+   margin-left: 12px;
+   width: 100%;
+   text-decoration: none;
+   color: white;
+   padding: 5px;
+   padding-left: 5px;
+}
+
+.sidebar-item:hover {
    background-color: white;
    color: black;
    border-radius: 10px;
 }
 
-.link-sidebar{
+.sidebar-item-alt {
+   font-size: 20px;
+   text-decoration: none;
+   margin-top: 5px;
+   margin-left: 5px;
    text-decoration: none;
    color: white;
+   padding: 5px;
+   padding-left: 5px;
+}
+
+.sidebar-item-alt:hover {
+   background-color: white;
+   color: black;
+   border-radius: 10px;
+}
+
+.sidebar-tree {
+   display: flex;
+   grid-template-columns: 20px auto;
+}
+
+.line-alt {
+   margin-top: 5px;
+   height: 36.5px;
+   width: 2px;
+   margin-left: 30px;
+   background-color: white;
+}
+
+.admin-panels{
+   width: 100%;
+   display: grid;
+   grid-template-columns: auto auto;
+}
+
+.admin-panel{
+   border-radius: 10px;
+   border-bottom: 3px solid #023E8A;
+   border-left: 3px solid #023E8A;
+   border-top: 3px solid #90E0EF;
+   border-right: 3px solid #90E0EF;
+   background-color: white;
+   margin: 40px;
+   padding: 10px;
+}
+
+.admin-panel-head{
+   font-size: 30px;
 }

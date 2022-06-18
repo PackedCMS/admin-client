@@ -10,7 +10,6 @@ export default function Sidebar() {
          <SidebarBrand />
          <div className="sidebar-line"></div>
          <SidebarItems></SidebarItems>
-         <div className="sidebar-line"></div>
       </div>
    )
 }
