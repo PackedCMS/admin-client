@@ -1,5 +1,5 @@
-import AdminPanels from "../components/panels";
-import Sidebar from "../components/sidebar";
+import AdminPanels from "../../components/panels";
+import Sidebar from "../../components/sidebar";
 
 
 export default function Index() {
