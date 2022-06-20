@@ -119,3 +119,36 @@ a {
 .admin-panel-head{
    font-size: 30px;
 }
+
+
+.endpoint-item{
+   display: grid;
+   grid-template-columns: 1fr auto;
+   background-color: rgb(32, 32, 32);
+   border-bottom: 2px solid white;
+}
+
+.endpoint-item-name{
+   font-size: 24px;
+   margin: 5px;
+   padding: 5px;
+}
+
+.enpoint-action-items{
+   display: flex;
+   flex-wrap: wrap;
+   float: right;
+}
+
+.endpoint-action-item{
+   font-size: 24px;
+   margin: 5px;
+   border: 2px solid white;
+   border-radius: 10px;
+   padding: 5px;
+   color: white;
+}
+
+.endpoint-action-item:hover{
+   background-color: rgb(52,52,52);
+}
