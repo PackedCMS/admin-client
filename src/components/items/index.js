@@ -1,3 +1,4 @@
+import { default_endpoints } from "../../services/endpoints/defatuls";
 import SidebarItem from "./button/button";
 import SidebarItemAlt from "./button/buttonalt";
 
@@ -14,18 +15,18 @@ export default function SidebarItems() {
          </div>
          <div>
             <SidebarItem to="/admin/endpoints">Endpoints</SidebarItem>
-            <SidebarItemAlt to="/admin/endpoint/posts">Yazılar</SidebarItemAlt>
-            <SidebarItemAlt to="/admin/endpoint/photos">Resimler</SidebarItemAlt>
-            <SidebarItemAlt to="/admin/endpoint/sharings">Yorumlar</SidebarItemAlt>
+            {default_endpoints.map((endpoint) => (
+               <SidebarItemAlt to={"/admin/media/" + endpoint.slug}>{endpoint.name}</SidebarItemAlt>
+            ))}
          </div>
          <div>
             <SidebarItem to="/admin/media">Medya</SidebarItem>
             <SidebarItemAlt to="/admin/media/posts">Yazılar</SidebarItemAlt>
-            <SidebarItemAlt to="/admin/media/photos">Resimler</SidebarItemAlt>
+            <SidebarItemAlt to="/admin/media/media">Medya</SidebarItemAlt>
             <SidebarItemAlt to="/admin/media/sharings">Paylaşımlar</SidebarItemAlt>
          </div>
          <div>
-            <SidebarItem to="/admin/settigns">Ayarlar</SidebarItem>
+            <SidebarItem to="/admin/settings">Ayarlar</SidebarItem>
             <SidebarItemAlt to="/admin/users">Kullanıcılar</SidebarItemAlt>
             <SidebarItemAlt to="/admin/photos">Yetkiler</SidebarItemAlt>
          </div>
