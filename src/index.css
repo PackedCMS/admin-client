@@ -95,17 +95,17 @@ a {
    background-color: white;
 }
 
-.admin-panels{
+.admin-panels {
    width: 100%;
    display: grid;
    grid-template-columns: 1fr 1fr;
 }
 
-.admin-panels-one{
+.admin-panels-one {
    width: 100%;
 }
 
-.admin-panel{
+.admin-panel {
    border-radius: 10px;
    /*border-bottom: 3px solid #023E8A;
    border-left: 3px solid #023E8A;
@@ -117,31 +117,31 @@ a {
    padding: 10px;
 }
 
-.admin-panel-head{
+.admin-panel-head {
    font-size: 30px;
 }
 
 
-.endpoint-item{
+.endpoint-item {
    display: grid;
    grid-template-columns: 1fr auto;
    background-color: rgb(32, 32, 32);
    border-bottom: 2px solid white;
 }
 
-.endpoint-item-name{
+.endpoint-item-name {
    font-size: 24px;
    margin: 5px;
    padding: 5px;
 }
 
-.enpoint-action-items{
+.enpoint-action-items {
    display: flex;
    flex-wrap: wrap;
    float: right;
 }
 
-.endpoint-action-item{
+.endpoint-action-item {
    font-size: 24px;
    margin: 5px;
    border: 2px solid white;
@@ -150,6 +150,50 @@ a {
    color: white;
 }
 
-.endpoint-action-item:hover{
-   background-color: rgb(52,52,52);
+.endpoint-action-item:hover {
+   background-color: rgb(52, 52, 52);
+}
+
+.form-one {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+
+.form-two {
+   display: grid;
+   grid-template-columns: auto auto;
+}
+
+.form-item{
+   margin-right: 20px ;
+}
+
+.form-label {
+   font-size: 20px;
+}
+
+.form-input {
+   font-size: 20px;
+   border-radius: 10px;
+   padding: 7px;
+   margin-top: 5px;
+   width: 100%;
+   border: none;
+   outline: none;
+   background-color: rgb(32, 32, 32);
+   color: white;
+}
+
+.form-button{
+   text-align: center;
+   border-radius: 10px;
+   font-size: 20px;
+   margin-top: 5px;
+   padding: 5px;
+   background-color: rgb(32, 32, 32);
+}
+
+.form-button:hover{
+   background-color: rgb(19, 19, 19);
+   transition: .5s;
 }
