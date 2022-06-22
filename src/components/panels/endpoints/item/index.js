@@ -12,11 +12,11 @@ export default function EndpointItem({ slug, children }) {
             {children}
          </div>
          <div className="enpoint-action-items">
-            <Link to={`${slug}/edit`} className="endpoint-action-item">
+            <Link to={`/admin/endpoints/${slug}/edit`} className="endpoint-action-item">
                Edit <i class="fa-solid fa-pencil"></i>
             </Link>
             {!default_endpoints.map(a => a.slug).includes(slug) ? (
-               <Link to={`${slug}/delete`} className="endpoint-action-item">
+               <Link to={`/admin/endpoints/${slug}/delete`} className="endpoint-action-item">
                   Delete <i class="fa-solid fa-trash"></i>
                </Link>
             ) : (<></>)}
