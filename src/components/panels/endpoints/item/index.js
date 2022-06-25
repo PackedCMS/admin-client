@@ -15,6 +15,9 @@ export default function EndpointItem({ slug, children }) {
             <Link to={`/admin/endpoints/${slug}/edit`} className="endpoint-action-item">
                Edit <i class="fa-solid fa-pencil"></i>
             </Link>
+            <Link to={`/admin/endpoints/${slug}/edit`} className="endpoint-action-item">
+               Show <i class="fa-solid fa-list"></i>
+            </Link>
             {!default_endpoints.map(a => a.slug).includes(slug) ? (
                <Link to={`/admin/endpoints/${slug}/delete`} className="endpoint-action-item">
                   Delete <i class="fa-solid fa-trash"></i>

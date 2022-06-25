@@ -9,7 +9,7 @@ import { default_endpoints } from "../../../../services/endpoints/defatuls";
 export default function EndpointEdit() {
 
    const { slug } = useParams();
-   
+
    const [value, setValue] = useState({})
 
    useEffect(() => {

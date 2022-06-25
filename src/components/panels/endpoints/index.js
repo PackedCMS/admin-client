@@ -8,7 +8,10 @@ export default function EndpointsPanels() {
    return (
       <div>
          <div className="admin-panels-one">
-            <AdminPanel head="Endpointler">
+            <AdminPanel head="Endpointler" right={{
+               name: "New",
+               to: "/admin/endpoints/new"
+            }}>
                {default_endpoints.map(endpoint => (
                   <EndpointItem slug={endpoint.slug}>{endpoint.name}</EndpointItem>
                ))}

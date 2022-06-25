@@ -16,7 +16,7 @@ export default function SidebarItems() {
          <div>
             <SidebarItem to="/admin/endpoints">Endpoints</SidebarItem>
             {default_endpoints.map((endpoint) => (
-               <SidebarItemAlt to={"/admin/endpoints/" + endpoint.slug + "/edit"}>{endpoint.name}</SidebarItemAlt>
+               <SidebarItemAlt to={"/admin/endpoints/" + endpoint.slug}>{endpoint.name}</SidebarItemAlt>
             ))} 
          </div>
          <div>
